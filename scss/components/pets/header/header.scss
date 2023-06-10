@@ -1,0 +1,75 @@
+// PETS PAGE
+.pets--header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pets--logo {
+    padding: 3rem 0;
+
+    &--text {
+        display: block;
+        padding: 0 0 1rem 0;
+        @extend %font-regular;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+    }
+
+    &--subtext {
+        padding: 0 0 0 5px;
+        @extend %font-arial-regular;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1em;
+        color: $dark;
+    }
+}
+
+.pets--nav {
+
+    &--list {
+        display: flex;
+        gap: 3.5rem;
+        transition: all 0.5s;
+    }
+
+    &--link {
+        padding-bottom: 2px;
+        @extend %font-arial-regular;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: $darkGray;
+        transition: 0.5s ease-in-out;
+    }
+
+    &--item:nth-child(2) &--link {
+        padding-bottom: 2px;
+        color: $dark;
+        border-bottom: 3px solid $desertColor;
+    }
+
+    &--item:not(:nth-child(2)) &--link:hover {
+        color: $dark;
+    }
+
+    &--item:not(:nth-child(2)) &--link:active {
+        color: $darkGray;
+        border-bottom: 3px solid $desertColor;
+        transition: all 0.5s;
+    }
+}
+
+
+.pets--header--burger {
+    display: none;
+}
+
+.pets--menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+}

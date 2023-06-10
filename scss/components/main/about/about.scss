@@ -1,0 +1,44 @@
+.about {
+    padding: 8rem 0 10rem;
+    transition: 0.6s ease-in-out;
+
+    &--container {
+        display: flex;
+        align-items: flex-end;
+        transition: 0.6s ease-in-out;
+
+    }
+
+    &--img {
+        padding: 0 12rem 0 17.5rem;
+        transition: 0.6s ease-in-out;
+
+    }
+
+    &--content {
+        transition: 0.6s ease-in-out;
+        width: 43rem;
+    }
+
+    &--title {
+        width: 37rem;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+    }
+
+    &--text {
+        padding-top: 2.5rem;
+        @extend %font-arial-regular;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: $lightGray;
+        transition: 0.6s ease-in-out;
+
+        &-down {
+            padding-bottom: 2rem;
+        }
+    }
+}

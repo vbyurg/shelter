@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/svg/favicon.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Cozy House</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="overlay"></div>
+        <header class="header">
+            <div class="container header--container">
+
+                <div class="header--wrapper">
+                    <!-- Header logo -->
+                    <div class="header--logo logo">
+                        <a href="#" class="logo--text">Cozy House</a>
+                        <a href="#" class="logo--subtext">Shelter for pets in Boston</a>
+                    </div>
+
+                    <!-- Header nav -->
+                    <nav class="header--nav">
+                        <ul class="nav--list">
+                            <li class="nav--item"><a href="./index.html" class="nav--link" target="_blank">About the
+                                    shelter</a></li>
+                            <li class="nav--item"><a href="./pets.html" class="nav--link" target="_blank">Our pets</a>
+                            </li>
+                            <li class="nav--item"><a href="#help" class="nav--link">Help the shelter</a></li>
+                            <li class="nav--item"><a href="#footer" class="nav--link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Burger menu -->
+                <div class="header--burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Hiden menu -->
+                <div class="menu">
+                    <ul class="menu--list">
+                        <li class="menu--item"><a href="./index.html" class="menu--link" target="_blank">About the shelter</a></li>
+                        <li class="menu--item"><a href="./pets.html" class="menu--link" target="_blank">Our pets</a></li>
+                        <li class="menu--item"><a href="#help" class="menu--link">Help the shelter</a></li>
+                        <li class="menu--item"><a href="#footer" class="menu--link"">Contacts</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Not Only section -->
+                <section class="not--only">
+                    <!-- Not only content -->
+                    <div class="not--only--content">
+                        <h1 class="not--only--title">Not only people need a house</h1>
+                        <p class="not--only--text">We offer to give a chance to a little and nice puppy with an
+                            extremely wide and open heart. He or she will love you more than anybody else in the world,
+                            you will see!</p>
+                        <a href="#friends" class="not--only--btn">Make a friend</a>
+                    </div>
+                    <!-- Not Only image -->
+                    <div class="not--only--img">
+                        <picture>
+                            <source srcset="./assets/img/not--only--mobile.png" media="(max-width: 654px)">
+                            <source srcset="./assets/img/not--only--tablet.png" media="(max-width: 965px)">
+                            <img src="./assets/img/not--only--main.png" alt="puppy">
+                        </picture>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- About section -->
+            <section class="about">
+
+                <div class="container about--container">
+                    <!-- About image -->
+                    <div class="about--img">
+                        <picture>
+                            <source srcset="./assets/img/about-pets--mobile.png" media="(max-width: 767px)">
+                            <img src="./assets/img/about-pets--main.png" alt="puppy">
+                        </picture>
+                    </div>
+
+                    <!-- Aabout content -->
+                    <div class="about--content">
+                        <h2 class="about--title">About the shelter “Cozy House”</h2>
+                        <p class="about--text">Currently we have 121 dogs and 342 cats on our hands and statistics show
+                            that only 20% of them will find a family. The others will continue to live with us and will
+                            be waiting for a lucky chance to become dearly loved.</p>
+                        <p class="about--text about--text-down">We feed our wards with the best food and make sure that
+                            they do not get
+                            sick, feel comfortable (including psychologically) and well. We are supported by 87
+                            volunteers and 28 employees of various skill levels. About 12% of the animals are taken by
+                            the shelter staff. Taking care of the animals, they become attached to the pets and would
+                            hardly ever leave them alone.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our friends section -->
+            <section id="friends" class="friends">
+                <div class="container friends--container">
+                    <h2 class="friends--title">Our friends who <br>are looking for a house</h2>
+
+                    <!-- Our friends slider -->
+                    <div class="friends--slider slider">
+
+                        <div class="slider--block">
+                            <div class="slider--img">
+                                <img src="./assets/img/friends-katrine.png" alt="Katrine">
+                            </div>
+                            <div class="slider--content">
+                                <p class="slider--name slider--name-left">Katrine</p>
+                                <div class="slider--btn-wrapper">
+                                    <button class="slider--btn slider--btn-left">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider--block">
+                            <div class="slider--img">
+                                <img src="./assets/img/friends-jennifer.png" alt="Jennifer">
+                            </div>
+                            <div class="slider--content">
+                                <p class="slider--name">Jennifer</p>
+                                <div class="slider--btn-wrapper">
+                                    <button class="slider--btn">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider--block">
+                            <div class="slider--img">
+                                <img src="./assets/img/friends-woody.png" alt="Woody">
+                            </div>
+                            <div class="slider--content">
+                                <p class="slider--name slider--name-right">Woody</p>
+                                <div class="slider--btn-wrapper">
+                                    <button class="slider--btn slider--btn-right">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="slider--prev" id="prev"><img src="./assets/svg/ArrowPrev.svg" alt="arrow"></button>
+                        <button class="slider--next" id="next"><img src="./assets/svg/ArrowNext.svg" alt="arrow"></button>
+                    </div>
+
+                    <div class="friends--btn-wrapper">
+                        <a class="friends--btn" href="./pets.html" target="_blank">Get to know the rest</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Help section -->
+            <section id="help" class="help">
+                <div class="container help--container">
+                    <h2 class="help--title">How you can help
+                        our shelter</h2>
+
+                    <div class="help--list">
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-pet-food.svg" alt="Pet food" class="help--img">
+                            <p class="help--text">Pet food</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-transportation.svg" alt="Transportation" class="help--img">
+                            <p class="help--text">Transportation</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-toys.svg" alt="Toys" class="help--img">
+                            <p class="help--text">Toys</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-bowls-and-cups.svg" alt="Bowls and cups" class="help--img">
+                            <p class="help--text">Bowls and cups</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-shampoos.svg" alt="Shampoos" class="help--img">
+                            <p class="help--text">Shampoos</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-vitamins.svg" alt="Vitamins" class="help--img">
+                            <p class="help--text">Vitamins</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-medicines.svg" alt="Medicines" class="help--img">
+                            <p class="help--text">Medicines</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-collars-leashes.svg" alt="Collars / leashes" class="help--img">
+                            <p class="help--text">Collars / leashes</p>
+                        </div>
+
+                        <div class="help--item">
+                            <img src="./assets/svg/icon-sleeping-area.svg" alt="Sleeping areas" class="help--img">
+                            <p class="help--text">Sleeping areas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- In addition section -->
+            <section class="addition">
+                <div class="container addition--container">
+                    <!-- In addition image -->
+                    <div class="addition--img">
+                        <picture>
+                            <source srcset="./assets/img/donation-dog-mobile.png" media="(max-width: 767px)">
+                            <img src="./assets/img/donation-dog.png" alt="dog">
+                        </picture>
+                    </div>
+
+                    <!-- In addition content -->
+                    <div class="addition--content">
+                        <h2 class="addition--title">You can also make a donation</h2>
+                        <p class="addition--type">
+                            Name of the bank / Type of bank account
+                        </p>
+                        <div class="addition--card">
+                            <a href="#" class="addition--card-number">8380 2880 8028 8791 7435</a>
+                        </div>
+                        <p class="addition--text">Legal information and lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent
+                            ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in
+                            faucibus.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+
+        <footer id="footer" class="footer">
+            <div class="container footer--container">
+                <!-- Footer contacts -->
+                <div class="footer--contacts">
+                    <h3 class="footer--contacts-title">For questions and suggestions</h3>
+                    <p class="footer--email"><a class="footer--text"
+                            href="mailto:email@shelter.com">email@shelter.com</a></p>
+                    <p class="footer--phone"><a class="footer--text" href="tel:+136745677554">+13 674 567 75 54</a>
+                    </p>
+                </div>
+
+                <div class="footer--adress">
+                    <h3 class="footer--adress-title">We are waiting for your visit</h3>
+                    <div class="footer--place">
+                        <a href="https://goo.gl/maps/y9246y1GLaRb31Jt8" class="footer--text" target="_blank">1
+                            Central Street, Boston (entrance from the store)</a>
+                    </div>
+
+                    <div class="footer--place-mark">
+                        <a href="https://goo.gl/maps/pXMeiZG57D2JyYxG8" class="footer--text" target="_blank">18
+                            South Park, London</a>
+                    </div>
+                </div>
+
+                <div class="footer--img">
+                    <picture>
+                        <source srcset="./assets/img/footer-puppy-mobile.png" media="(max-width: 767px)">
+                        <img src="./assets/img/footer-puppy.png" alt="dog">
+                    </picture>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script/index.js"></script>
+    <script src="./script/burger.js"></script>
+    <script src="./script/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@include mobile {
+    .footer {
+        height: 100%;
+
+        &--contacts {
+            display: block;
+            margin: 0 auto;
+            padding: 3rem 0 3.5rem;
+        }
+
+        &--contacts-title {
+            width: 28rem;
+            padding-bottom: 4rem;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+        }
+
+        &--email {
+            padding: 0 0 3.5rem 1.5rem;
+        }
+
+        &--phone {
+            padding-left: 1.8rem;
+        }
+
+        &--img {
+            padding: 3.7rem 0 0 2rem;
+        }
+
+        &--adress {
+            width: 30rem;
+            padding-top: 0;
+        }
+
+        &--adress-title {
+            width: 28rem;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+        }
+
+        &--place {
+
+            &::before {
+                padding: 0.6rem 2rem 1.5rem 0;
+            }
+
+            &-mark::before {
+                padding: 1rem 1.7rem 0 0;
+            }
+        }
+    }
+}

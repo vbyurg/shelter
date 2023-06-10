@@ -1,0 +1,59 @@
+@include mobile-burger {
+    .pets--header {
+
+        &--wrapper {
+            display: block;
+            margin: 0 auto;
+            width: 28rem;
+        }
+
+        &--nav {
+            display: none;
+        }
+    }
+
+    .pets--logo {
+        padding: 3rem 0 3rem 1rem;
+    }
+
+
+    // Burge menu
+    .header--burger.black {
+        display: block;
+        position: absolute;
+        z-index: 99999;
+        top: 4.9rem;
+        right: 2rem;
+        width: 3rem;
+        height: 2.2rem;
+        cursor: pointer;
+        transition: 0.9s ease-in-out;
+
+        &.active {
+            transition: 0.9s ease-in-out;
+            transform: rotate(-90deg);
+        }
+
+        & span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $black;
+            transition: 0.9s;
+
+            &:nth-child(1) {
+                top: 0px;
+                transform-origin: center;
+            }
+
+            &:nth-child(2) {
+                top: 10px;
+            }
+
+            &:nth-child(3) {
+                top: 20px;
+            }
+        }
+    }
+}

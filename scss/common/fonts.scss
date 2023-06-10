@@ -1,0 +1,19 @@
+// Georgia
+
+// Regular
+@font-face {
+	font-family: 'Georgia';
+	src: url('./assets/fonts/Georgia-Regular.ttf') format("opentype");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+// Bold
+@font-face {
+	font-family: 'Georgia';
+	src: url('./assets/fonts/Georgia-Bold.ttf') format("opentype");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}

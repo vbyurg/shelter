@@ -1,0 +1,51 @@
+// colors
+// $gradient: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+$gradient: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+
+
+$gray: #F6F6F6;
+$desertColor: #F1CDB3;
+$btnHover: #FDDCC4;
+$textNormal: #CDCDCD;
+$textActiveHover: #FAFAFA;
+$blur: rgba(41, 41, 41, 0.6);
+$light: #FFFFFF;
+$dark: #292929;
+$darkGray: #545454;
+$lightGray: #4C4C4C;
+$legal: #B2B2B2;
+$black: #000000;
+
+// breakpoints
+$tablet: 965px;
+$mobile: 654px;
+$mobile-burger: 767px;
+
+// fonts ("@extend)
+%font-regular {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+}
+
+%font-bold {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+}
+
+%font-arial-regular {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+}
+
+%font-arial-italic {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+}
+
+%transition {
+    transition: all 0.6s ease-in-out;
+}

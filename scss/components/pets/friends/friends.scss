@@ -1,0 +1,135 @@
+.pets--friends {
+    background: $gray;
+    // height: 100vh;
+
+    &--title {
+        width: 40rem;
+        margin: 0 auto;
+        padding: 8rem 0 6rem 0;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+        text-align: center;
+    }
+}
+
+.pets--slider {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    grid-template-rows: repeat(2, minmax(43.5rem, 1fr));
+    gap: 3rem 4rem;
+
+    &--block {
+        background-color: $textActiveHover;
+        cursor: pointer;
+
+        &:hover .pets--slider--content {
+            background-color: $light;
+            transition: background-color 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+
+        &:hover .pets--slider--btn {
+            background-color: $btnHover;
+            border: 2px solid $btnHover;
+            transition: all 0.6s ease-in-out;
+        }
+    }
+
+    &--img img {
+        display: block;
+    }
+
+    &--content {
+        display: block;
+        background: $textActiveHover;
+    }
+
+    &--name {
+        display: block;
+        padding: 3rem 0 3rem;
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.33rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+        text-align: center;
+    }
+
+    &--btn {
+        padding: 1.3rem 4.5rem;
+        margin-bottom: 3rem;
+        @extend %font-regular;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.06em;
+        color: $dark;
+        background-color: $textActiveHover;
+        border: 2px solid $desertColor;
+        border-radius: 10rem;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.pagination {
+    padding: 6rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    &--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.2rem;
+        height: 5.2rem;
+        cursor: pointer;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            @extend %font-regular;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            color: $textNormal;
+            border: 2px solid $textNormal;
+            border-radius: 10rem;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+            @extend %font-regular;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            color: $dark;
+            border: 2px solid $desertColor;
+            border-radius: 10rem;
+            transition: 0.6s ease-in-out;
+
+            &:hover {
+                background: $btnHover;
+                border: 2px solid $btnHover;
+                transition: 0.6s ease-in-out;
+            }
+
+            &:active {
+                background: $desertColor;
+                border: 2px solid $desertColor;
+                transition: 0.6s ease-in-out;
+            }
+        }
+
+
+    }
+}

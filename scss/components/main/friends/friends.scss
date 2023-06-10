@@ -1,0 +1,164 @@
+.friends {
+    height: 87.7rem;
+    background: $gray;
+
+    &--btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--title {
+        width: 40rem;
+        margin: 0 auto;
+        padding: 7.6rem 0 6rem 0;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+        text-align: center;
+    }
+
+    &--btn {
+
+        padding: 1.5rem 4.5rem;
+        @extend %font-regular;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        color: $dark;
+        border: none;
+        border-radius: 10rem;
+        background-color: $desertColor;
+        transition: background-color 0.6s ease-in-out;
+
+
+        &:hover {
+            background-color: $btnHover;
+            transition: background-color 0.6s ease-in-out;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &--content {
+        transition: all 0.6s ease-in-out;
+    }
+    &--img img {
+        display: block;
+    }
+
+    &--block {
+        background-color: $textActiveHover;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+
+
+        &:hover .slider--content {
+            background-color: $light;
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+            transition: all 0.6s ease-in-out;
+        }
+
+        &:hover .slider--btn {
+            background-color: $btnHover;
+            border: 2px solid $btnHover;
+            transition: all 0.6s ease-in-out;
+        }
+
+        &:nth-child(3) {
+            transition: 0.6s ease-in-out;
+        }
+    }
+
+    &--name {
+        display: block;
+        padding: 2.5rem 0 3rem;
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.33rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+        text-align: center;
+
+        &-left {
+            margin-left: 2rem;
+        }
+
+        &-right {
+            margin-right: 2rem;
+        }
+    }
+
+    &--btn {
+        padding: 1.5rem 4.5rem;
+        margin-bottom: 3rem;
+        @extend %font-regular;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.06em;
+        color: $dark;
+        background-color: $textActiveHover;
+        border: 2px solid $desertColor;
+        border-radius: 10rem;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+
+        &-left {
+            margin-left: 2rem;
+        }
+
+        &-right {
+            margin-right: 2rem;
+        }
+    }
+
+    &--btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &--prev,
+    &--next {
+        position: absolute;
+        top: 50%;
+        width: 5.2rem;
+        height: 5.2rem;
+        margin-top: -3rem;
+        border: 2px solid $desertColor;
+        border-radius: 10rem;
+        background-color: $textActiveHover;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: background-color 0.6s ease-in-out;
+
+        &:hover {
+            background-color: $btnHover;
+            border: 2px solid $btnHover;
+            transition: background-color 0.6s ease-in-out;
+        }
+
+        &:active {
+            background-color: $desertColor;
+            border: 2px solid $desertColor;
+            transition: background-color 0.6s ease-in-out;
+        }
+    }
+
+    &--prev {
+        left: 0;
+    }
+
+    &--next {
+        right: 0;
+    }
+}

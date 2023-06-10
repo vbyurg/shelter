@@ -1,0 +1,31 @@
+@include mobile {
+    .help {
+        &--title {
+            width: 25rem;
+            padding: 4rem 0 4.2rem;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+        }
+
+        &--list {
+            width: 29rem;
+            grid-template-rows: repeat(auto-fill, minmax(8.7rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+            gap: 3rem;
+            padding-bottom: 4.2rem;
+        }
+
+
+        &--img {
+            width: 5rem;
+            height: 5rem;
+            padding-bottom: 0;
+        }
+
+        &--text {
+            padding-top: 2rem;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+    }
+}

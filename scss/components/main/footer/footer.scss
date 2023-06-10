@@ -1,0 +1,136 @@
+.footer {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    height: auto;
+
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        // gap: 16rem;
+    }
+
+    &--contacts {
+        padding-top: 5.6rem;
+    }
+
+    &--contacts-title {
+        width: 28rem;
+        padding-bottom: 4.1rem;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $light;
+    }
+
+    &--email {
+        padding-bottom: 3.3rem;
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $desertColor;
+        transition: 0.6s ease-in-out;
+
+        &::before {
+            content: url('../assets/svg/icon-email.svg');
+            padding-right: 2rem;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.6s ease-in-out;
+        }
+    }
+
+    &--phone {
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $desertColor;
+        transition: 0.6s ease-in-out;
+
+        &::before {
+            content: url('../assets/svg/icon-phone.svg');
+            padding-right: 2rem;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.6s ease-in-out;
+        }
+    }
+
+    &--adress-title {
+        padding-bottom: 3.4rem;
+        width: 28rem;
+        margin: 0 auto;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $light;
+    }
+
+    &--text {
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $desertColor;
+    }
+
+    &--adress {
+        width: 34rem;
+        padding-top: 5.6rem;
+    }
+
+    &--place {
+        display: flex;
+        padding-bottom: 3.3em;
+        transition: 0.6s ease-in-out;
+
+        &::before {
+            content: url('../assets/svg/icon-marker.svg');
+            vertical-align: middle;
+            padding: 0.6rem 2rem 0 2.4rem;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.6s ease-in-out;
+        }
+
+        &-mark::before {
+            content: url('../assets/svg/icon-marker.svg');
+            vertical-align: middle;
+            padding: 1rem 2rem 0 2.6rem;
+        }
+
+        &-mark {
+            transition: 0.6s ease-in-out;
+        }
+
+        &-mark:hover {
+            transform: scale(1.03);
+            transition: 0.6s ease-in-out;
+        }
+    }
+
+    &--text {
+        @extend %font-regular;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $desertColor;
+        cursor: pointer;
+
+    }
+
+
+    &--img {
+        padding: 4rem 0 0 1.8rem;
+    }
+}

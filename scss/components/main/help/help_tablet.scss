@@ -1,0 +1,16 @@
+@include tablet {
+    .help {
+        &--title {
+            padding: 7.8rem 0 6rem;
+        }
+
+        &--list {
+            width: 63rem;
+            display: grid;
+            margin: 0 auto;
+            grid-template-rows: repeat(auto-fill, minmax(11.3rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+            gap: 5.5rem 6rem;
+        }
+    }
+}

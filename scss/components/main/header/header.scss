@@ -1,0 +1,95 @@
+.header {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header--wrapper {
+    padding-bottom: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+
+    padding: 3rem 0 0 0;
+
+    &--text {
+        display: block;
+        padding: 0 0 1rem 0;
+        @extend %font-regular;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.06em;
+        color: $desertColor;
+    }
+
+    &--subtext {
+        padding: 0 0 0 5px;
+        @extend %font-arial-regular;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1em;
+        color: $light;
+    }
+}
+
+.header--nav {
+    padding-top: 3rem;
+}
+
+.nav {
+
+    &--list {
+        display: flex;
+        gap: 3.5rem;
+        transition: all 0.5s;
+
+    }
+
+    &--item:nth-child(1) .nav--link {
+        padding-bottom: 2px;
+        color: $light;
+        border-bottom: 3px solid $desertColor;
+    }
+
+    &--item:not(:first-child) .nav--link:hover {
+        color: $light;
+    }
+
+    &--item:not(:first-child) .nav--link:active {
+        color: $light;
+        border-bottom: 3px solid $desertColor;
+        transition: all 0.5s;
+    }
+
+    &--link {
+        padding-bottom: 2px;
+        @extend %font-arial-regular;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: $textNormal;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.header--burger {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(41, 41, 41, 0.4);
+}

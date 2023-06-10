@@ -1,0 +1,59 @@
+@include mobile {
+    .addition {
+        &--container {
+            padding: 0 0 3.7rem;
+            align-items: center;
+        }
+
+        &--content {
+            padding: 4.2rem 0 0;
+            width: 30rem;
+        }
+
+        &--title {
+            display: block;
+            margin: 0 auto;
+            width: 22rem;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            text-align: center;
+        }
+
+        &--type {
+            padding-left: 1.4rem;
+            width: 30rem;
+            font-size: 1.5rem;
+            line-height: 160%;
+            letter-spacing: normal;
+        }
+
+        &--card {
+            display: block;
+            margin: 0 auto;
+            width: 28rem;
+
+            &-number {
+                padding: 1rem 1.5rem;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+
+                &::before {
+                    content: url('../assets/svg/credit-card.svg');
+                    vertical-align: middle;
+                    padding-right: 1.2rem;
+                }
+            }
+        }
+
+        &--img {
+            padding: 1.3rem 0 0 0;
+        }
+
+        &--text {
+            display: block;
+            margin: 0 auto;
+            width: 28rem;
+            text-align: justify;
+        }
+    }
+}

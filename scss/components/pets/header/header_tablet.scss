@@ -1,0 +1,16 @@
+@include tablet {
+    .header {
+        &--wrapper {
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+.pets--header--burger {
+    display: none;
+}
+
+.pets--menu {
+    display: none;
+}
+

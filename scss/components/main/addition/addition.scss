@@ -1,0 +1,76 @@
+.addition {
+    background: $gray;
+    
+    &--container {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 10rem;
+        gap: 3rem;
+    }
+
+    &--img {
+        padding: 8.8rem 0 0;
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        padding: 7.5rem 0 0;
+        width: 38rem;
+        gap: 2rem;
+    }
+
+    &--title {
+        width: 30rem;
+        @extend %font-regular;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+    }
+
+    &--type {
+        @extend %font-regular;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.06em;
+        color: $darkGray;
+    }
+
+    &--card {
+        width: 35rem;
+        height: 4.3rem;
+        background: $desertColor;
+        border-radius: 9px;
+        transition: background 0.6s ease-in-out;
+
+        &:hover {
+            background: $btnHover;
+            transition: background 0.6s ease-in-out;
+        }
+
+        &-number {
+            display: block;
+            padding: 1rem 1.5rem;
+            @extend %font-regular;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.06em;
+            color: $darkGray;
+            cursor: pointer;
+
+            &::before {
+                content: url('../assets/svg/credit-card.svg');
+                vertical-align: middle;
+                padding-right: 1.5rem;
+            }
+        }
+    }
+
+    &--text {
+        @extend %font-arial-italic;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: $legal;
+    }
+}
